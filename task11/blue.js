@@ -1,18 +1,15 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const paragraphs = document.querySelectorAll('p');
-  
-    paragraphs.forEach(paragraph => {
-      paragraph.addEventListener('mouseover', () => {
-        paragraph.classList.add('blue');
-      });
+const paragraphs = document.querySelectorAll('p');
 
-      paragraph.addEventListener('mouseout', () => {
-        paragraph.classList.remove('blue');
-      });
+  paragraphs.forEach(paragraph => {
+    paragraph.addEventListener('mouseover', () => {
+      paragraph.style.color = 'blue';
+    });
 
-      paragraph.addEventListener('click', () => {
-        paragraph.classList.toggle('highlighted');
-      });
+    paragraph.addEventListener('mouseout', () => {
+      paragraph.style.color = '';
+    });
+    
+    paragraph.addEventListener('click', () => {
+      paragraph.style.backgroundColor = paragraph.style.backgroundColor === 'yellow' ? '' : 'yellow';
     });
   });
-  

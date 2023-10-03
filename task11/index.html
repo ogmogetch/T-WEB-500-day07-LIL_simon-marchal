@@ -1,31 +1,42 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<meta charset="UTF-8">
-<title>Hover and Click Example</title>
-<style>
-    .blue {
-    color: blue;
-    }
-
-    .highlighted {
-    background-color: yellow;
-    }
-</style>
+    <meta charset="UTF-8">
+    <title>Hover and Click Example</title>
 </head>
-<body>
-<div class="wrapper">
-    <div class="exercice">
-    <header>
-        Hover and Click Example
-    </header>
-        <section>
-        <p>This is a paragraph.</p>
-        <p>This is another paragraph.</p>
-        </section>
-    </div>
-</div>
 
-<script src="script.js"></script>
+<body>
+    <div class="wrapper">
+        <div class="exercice">
+            <header>
+                Hover and Click Example
+            </header>
+            <section>
+                <p>This is a paragraph.</p>
+                <p>This is another paragraph.</p>
+            </section>
+        </div>
+    </div>
+
+    <script>src = "blue.js"
+        const paragraphs = document.querySelectorAll('p');
+
+        paragraphs.forEach(paragraph => {
+            paragraph.addEventListener('mouseover', () => {
+                paragraph.style.color = 'blue';
+            });
+
+            paragraph.addEventListener('mouseout', () => {
+                paragraph.style.color = '';
+            });
+
+            paragraph.addEventListener('click', () => {
+                paragraph.style.backgroundColor = paragraph.style.backgroundColor === 'yellow' ? '' : 'yellow';
+            });
+        });
+
+    </script>
 </body>
+
 </html>
