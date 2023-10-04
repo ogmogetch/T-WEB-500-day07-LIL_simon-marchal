@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Task 13</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="wrapper">
+    <div class="exercice">
+      <header>
+        Task 13
+      </header>
+      <section>
+        <form id="searchForm">
+          <label for="searchDropdown">Search by type:</label>
+          <select id="searchDropdown">
+            <option value="all">All</option>
+            <option value="note">Note</option>
+            <option value="email">Email</option>
+            <option value="todo">Todo</option>
+          </select>
+          <button type="button" onclick="searchItems()">Search</button>
+          <button type="button" onclick="resetSearch()">Reset</button>
+        </form>
+        <ul id="bulletList" class="bullet-list">
+        </ul>
+      </section>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

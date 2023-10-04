@@ -1,0 +1,16 @@
+/* Add your CSS styles here */
+#searchForm {
+  margin-top: 20px;
+}
+
+#searchDropdown {
+  margin-right: 10px;
+}
+
+#resetButton {
+  margin-left: 10px;
+}
+
+#searchString {
+  margin-right: 10px;
+}

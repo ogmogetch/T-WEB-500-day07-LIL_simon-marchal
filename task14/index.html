@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Task 14</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="wrapper">
+    <div class="exercice">
+      <header>
+        Task 14
+      </header>
+      <section>
+        <form id="searchForm">
+          <label for="searchString">Search string:</label>
+          <input type="text" id="searchString" placeholder="Enter search text">
+          <label for="searchDropdown">Search by type:</label>
+          <select id="searchDropdown">
+            <option value="all">All</option>
+            <option value="note">Note</option>
+            <option value="email">Email</option>
+            <option value="todo">Todo</option>
+          </select>
+          <button type="button" onclick="searchItems()">Search</button>
+          <button type="button" onclick="resetSearch()">Reset</button>
+        </form>
+        <ul id="bulletList" class="bullet-list">
+        </ul>
+      </section>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
